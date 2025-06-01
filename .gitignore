@@ -1,0 +1,48 @@
+# 🛑 Python Bytecode & Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cache
+
+# 🛑 Virtual Environment (venv)
+venv/
+env/
+
+# 🛑 IDE / Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🛑 Logs & Debug Files
+*.log
+logs/
+debug.log
+
+# 🛑 Environment Variables
+.env
+*.env
+
+# 🛑 Database Files (SQLite, if used for local testing)
+*.sqlite3
+*.db
+
+# 🛑 Docker Ignore Files
+docker-compose.override.yml
+.dockerignore
+
+# 🛑 Dependencies (if using pipenv or poetry)
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# 🛑 Node.js (if you integrate frontend with Next.js or Vue)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# 🛑 MacOS & System Files
+.DS_Store
+Thumbs.db
