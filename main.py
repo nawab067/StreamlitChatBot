@@ -26,7 +26,8 @@ else:
         st.session_state.chat_session = model.start_chat(history=[])
 
     # --- Streamlit Page Setup ---
-    st.title(" Chat with Gemini")
+    st.title(" Chat with Gemini 🧠")
+    st.subheader("ChatBot")
 
     # --- Display Chat History ---
     for message in st.session_state.chat_session.history:
