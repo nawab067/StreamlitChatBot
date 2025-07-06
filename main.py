@@ -12,7 +12,6 @@ GOOGLE_API_KEY = st.secrets["google"]["api_key"]
 
 if not GOOGLE_API_KEY:
     st.error("Google API key not found in secrets.toml.")
-    st.stop()
 else:
     gen_ai.configure(api_key=GOOGLE_API_KEY)
     model = gen_ai.GenerativeModel("gemini-2.0-flash")
