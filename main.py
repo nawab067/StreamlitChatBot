@@ -30,13 +30,13 @@ else:
         if "chat_session" not in st.session_state:
             st.session_state.chat_session = model.start_chat(history=[])
 
-        # --- Streamlit Page Setup ---
-        st.title(" Chat with Gemini")
-        with st.spinner("💡 Gemini is thinking..."):
-        # --- Display Chat History ---
-            for message in st.session_state.chat_session.history:
-                with st.chat_message(map_role(message.role)):
-                    st.markdown(message.parts[0].text)
+    # --- Streamlit Page Setup ---
+    st.title(" Chat with Gemini")
+
+    # --- Display Chat History ---
+    for message in st.session_state.chat_session.history:
+        with st.chat_message(map_role(message.role)):
+            st.markdown(message.parts[0].text)
 
             # --- Input from user ---
             user_input = st.chat_input("Type your query here...")
