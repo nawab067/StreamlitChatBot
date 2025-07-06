@@ -4,7 +4,6 @@ import google.generativeai as gen_ai
 import speech_recognition as sr
 from gtts import gTTS
 import tempfile
-import webbrowser
 import time
 
 st.set_page_config(page_title="Start with Gemini",
